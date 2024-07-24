@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "bxWXmMkYXpoiHc1ntDTYTU5X0tBhOIXbnpmcez9KamdAh364nJqI5y30Xi6jy2otPdISzRVSx4svzz6W8AGGBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\RiderProjects\\SpringHeroBank\\SpringHeroBank\\SpringHeroBank.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512"
+  ],
+  "logs": []
+}
