@@ -72,7 +72,37 @@ public class UserRepo : IUserRepository
 
     }
 
-   
+    
+
+    public User changeInformation(User user, string accountNumber )
+    {
+        try
+        {
+            using (var conn = new MySqlConnection(MySqlConnectionString))
+            {
+                conn.Open();
+                var query =
+                    "UPDATE users set user_name = @userName, full_name = @fullName, phone = @phone WHERE account_number = @accountNumber";
+                var command = new MySqlCommand(query, conn);
+                command.Parameters.AddWithValue("@userName",user.userName);
+                command.Parameters.AddWithValue("@fullName", user.fullName);
+                command.Parameters.AddWithValue("@accountNumber", user.accountNumber);
+                command.Parameters.AddWithValue("@phoneNumber", user.phone);
+                command.ExecuteNonQuery();
+                Console.WriteLine("Edit Successful!");
+                conn.Close();
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+
+        return user;
+    }
+
+
     public User Login(string userName, string passWord)
     {
         var conn = new MySqlConnection(MySqlConnectionString);

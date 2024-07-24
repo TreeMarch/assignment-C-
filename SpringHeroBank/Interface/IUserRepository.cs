@@ -9,6 +9,7 @@ public interface IUserRepository
     public User findUserByFullName(string fullName);
     User findUserByPhone(string phone);
     List<User> FindAll();
+    public User changeInformation(User user, string accountNumber);
 
     public void UpdateBalance(User user)
     {
